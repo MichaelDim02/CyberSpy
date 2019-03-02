@@ -1,0 +1,10 @@
+javascript:q=''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!q)q=prompt('Enter Email:','');if(q!=null)location='http://www.facebook.com/s.php?ref=ffs&q='+escape(q).replace(/ /g,'+');
+window.open('http://www.myspace.com/search/people?q='+q);
+window.open('https://www.google.com/search?q='+q);
+window.open('http://pipl.com/search/?Email='+q);
+window.open('http://www.bing.com/search?q='+q);
+window.open('http://www.spokeo.com/email/search?e='+q);
+window.open('http://www.advancedbackgroundchecks.com/email/'+q);
+window.open('http://www.usersherlock.com/usersearch/'+q);
+window.open('https://www.linkedin.com/sales/gmail/profile/viewByEmail/'+q);
+;void 0"

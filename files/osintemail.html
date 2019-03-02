@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<h1>CyberSpy</h1>
+Service Provided by <a href="http://illmob.org/bookmark.html">OSINT BOOKMARKLETS v0.3</a><br/>
+Make sure to allow pop ups.
+<script>
+q=''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!q)q=prompt('CyberSpy \n OSINT BOOKMARKLETS v0.3 \n Enter Email:','');if(q!=null)
+window.open('http://www.facebook.com/s.php?ref=ffs&q='+escape(q).replace(/ /g,'+'));
+window.open('http://www.myspace.com/search/people?q='+q);
+window.open('https://www.google.com/search?q='+q);
+window.open('http://pipl.com/search/?Email='+q);
+window.open('http://www.bing.com/search?q='+q);
+window.open('http://www.spokeo.com/email/search?e='+q);
+window.open('http://www.advancedbackgroundchecks.com/email/'+q);
+window.open('http://www.usersherlock.com/usersearch/'+q);
+window.open('https://www.linkedin.com/sales/gmail/profile/viewByEmail/'+q);
+;void 0
+</script>
+</html>
+
+
