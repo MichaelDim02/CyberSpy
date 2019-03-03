@@ -4,8 +4,8 @@ import os
 def email():
 	print "Email Services:\n"
 	print "	1. CyberSpy"
-	print "\n	Third Party Websites:"
 	print "	2. OSINT BOOKMARKLETS v0.3"
+	print "	Third Party Websites:"
 	print "	3. com.lullar.com"
 	print "	4. email-checker.net"
 	print "	5. EmailFinder"
@@ -33,8 +33,8 @@ def email():
 def username():
 	print "Username Services:\n"
 	print "	1. CyberSpy"
-	print "	Third Party Websites:"
 	print "	2. OSINT BOOKMARKLETS v0.3"
+	print "	Third Party Websites:"
 	print "	3. com.lullar.com"
 	print "	4. Google Advanced Search"
 	print "	5. Pipl.com"
@@ -67,9 +67,9 @@ def username():
 
 def legalname():
 	print "Legal Name Services:\n"
+	print "	1. OSINT BOOKMARKLETS v0.3"
 	print "	Third Party Websites:"
-	print "	1. White Pages"
-	print "	2. OSINT BOOKMARKLETS v0.3"
+	print "	2. White Pages"
 	print "	3. com.lullar.com"
 	print "	4. ZabaSearch (US)"
 	print "	5. Pipl.com"
@@ -84,9 +84,9 @@ def legalname():
 		print "\nBye!"
 		exit()
 	if option2 == "1":
-		webbrowser.open("https://whitepages.plus/", new=2)
-	elif option2 == "2":
 		webbrowser.open("", new=2)
+	elif option2 == "2":
+		webbrowser.open("https://whitepages.plus/", new=2)
 	elif option2 == "3":
 		webbrowser.open("http://com.lullar.com/", new=2)
 	elif option2 == "4":
@@ -106,10 +106,12 @@ def legalname():
 
 def number():
 	print "Phone number Services:\n"
+	print "	1. CyberSpy"
+	print "	2. OSINT BOOKMARKLETS v0.3"	
 	print "	Third Party Websites:"
-	print "	1. PeekYou"
-	print "	3. OSINT BOOKMARKLETS v0.3"
+	print "	3. PeekYou"
 	print "	4. ZabaSearch"
+	print "	5. WhoCalld"
 	print "\n	x. Back to menu\n"
 	try:
 		option2 = raw_input(">> ")
@@ -117,15 +119,18 @@ def number():
 		print "\nBye!"
 		exit()
 	if option2 == "1":
-		webbrowser.open("https://www.peekyou.com/phone", new=2)
-	elif option2 == "2":
-		link = os.path.abspath("files/osintphone.html")
+		link = os.path.abspath("files/phone.html")
 		webbrowser.open(link, new=2)
+	if option2 == "2":
+		link = os.path.abspath("files/osintphone.html")
+		webbrowser.open(link, new=2)		
 	elif option2 == "3":
-		webbrowser.open("https://www.zabasearch.com/reverse-phone-lookup/", new=2)
+		webbrowser.open("https://www.peekyou.com/phone", new=2)
 	elif option2 == "4":
-		webbrowser.open("", new=2)
+		webbrowser.open("https://www.zabasearch.com/reverse-phone-lookup/", new=2)
 	elif option2 == "5":
+		webbrowser.open("https://whocalld.com", new=2)
+	elif option2 == "6":
 		webbrowser.open("", new=2)
 	else:
 		banner()
