@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta name="author" content="MichaelDim02">
+	<link rel="icon" href="icon.ico">
+</head>
+<title>Legal name Search</title>
+<h1>CyberSpy</h1>
+Service Provided by <a href="http://illmob.org/bookmark.html">OSINT BOOKMARKLETS v0.3</a><br/>
+Make sure to allow JS & pop ups.
+<script>
+javascript:q=''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!q)q=prompt('Enter FirstName,LastName,State','');
+var str = (q);var res = str.split(',');
+window.open('http://www.veromi.net/Summary.asp?fn='+res[0]+'&ln='+res[1]+'&state='+res[2]+'&Search');
+window.open('https://peepfind.com/s.php?fn='+res[0]+'&ln='+res[1]+'&state='+res[2]+'&Search');
+window.open('http://criminalsearches.com/summary.aspx?input=name&fn=' + res[0] + '&ln=' + res[1] + '&city=&state=' + res[2] + '&zip=');
+window.open('http://www.zabasearch.com/query1_zaba.php?sname=' + res[0] + '%20' + res[1] + '&state=ALL&ref=&se=&doby=&city=&name_style=1&tm=');
+window.open('http://www.linkedin.com/pub/dir/?first=' + res[0] + '&last=' + res[1] + '&search=Search');
+window.open('http://www.veromi.net/Summary.asp?fn=' + res[0] + '&ln=' + res[1] + '&state=' + res[2]);
+window.open('http://www.411.com/search/FindPerson?extra_listing=mixed&form_mode=opt_b&post_back=1&firstname_begins_with=1&firstname=' + res[0] + '&name=' + res[1] + '&state_id=' + res[2]);
+window.open('http://pipl.com/search/?FirstName=' + res[0] + '&LastName=' + res[1] + '&City=&State=' + res[2]);
+window.open('http://www.facebook.com/s.php?q=' + res[0] + '+' + res[1] + '+' + res[2]);
+window.open('http://www.myspace.com/search/people?q=' + res[0] + ' ' + res[1] + '&type=People&g=B&loc=' + res[2]);
+window.open('http://www.peekyou.com/' + res[0] + '_' + res[1]);
+window.open('http://www.peoplesmart.com/psp.aspx?_act=resultswp&search=name&firstname=' + res[0] + '&lastname=' + res[1] + '&state=' + res[2]);
+window.open('http://radaris.com/p/' + res[0] + '/' + res[1] + '/' + res[2]);
+window.open('http://www.spokeo.com/search?q=' + res[0] +' '+ res[1]);
+window.open('http://twitter.com/#!/search/users/' + res[0] +' '+ res[1]);
+window.open('http://www.advancedbackgroundchecks.com/search/searchpreview.aspx?type=people&fn=' + res[0] +'&ln='+ res[1] +'&mn=&city=&state=' + res[2]);
+window.open('https://whitepages.plus/n/' + res[0] +'_'+ res[1] +'/location/' + res[2]);
+window.open('http://whitepagesus.net/search.php?q=' + res[0] +'+'+ res[1]);
+window.open('https://www.truepeoplesearch.com/results?name='+res[0]+'%20'+res[1]+'&citystatezip='+res[2]);
+void(0);
+</script>
+</html>
+
