@@ -9,7 +9,7 @@
 <h1>CyberSpy</h1><br/>
 Make sure to allow JS & pop ups.<br/>This is just an updated version of <br/><a href="http://illmob.org/bookmark.html">OSINT BOOKMARKLETS v0.3</a> 's IP look up service.<br/> Some of these do not work outside the US! <br/>
 <script>
-javascript:q=''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!q)q=prompt('Enter IP Address:','');if(q!=null)location='http://www.geoiptool.com/?IP='+escape(q).replace(/ /g,'+');
+q=''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!q)q=prompt('Enter IP Address:','');if(q!=null)location='http://www.geoiptool.com/?IP='+escape(q).replace(/ /g,'+');
 window.open('http://www.geobytes.com/IpLocator.htm?GetLocation&IpAddress='+q);
 window.open('http://dns-tools.domaintools.com/?m=traceroute&q='+q);
 window.open('http://dnstools.com/?count=1&lookup=on&wwwhois=on&arin=on&target='+q);

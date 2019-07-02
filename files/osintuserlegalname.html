@@ -10,7 +10,7 @@
 Service Provided by <a href="http://illmob.org/bookmark.html">OSINT BOOKMARKLETS v0.3</a><br/>
 Make sure to allow JS & pop ups.
 <script>
-q=''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!q)q=prompt('Enter FirstName,LastName,State','');
+javascript:q=''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!q)q=prompt('Enter FirstName,LastName,State','');
 var str = (q);var res = str.split(',');
 window.open('http://www.veromi.net/Summary.asp?fn='+res[0]+'&ln='+res[1]+'&state='+res[2]+'&Search');
 window.open('https://peepfind.com/s.php?fn='+res[0]+'&ln='+res[1]+'&state='+res[2]+'&Search');

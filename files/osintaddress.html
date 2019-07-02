@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta name="author" content="MichaelDim02">
+	<link rel="icon" href="icon.ico">
+</head>
+<title>Address Search</title>
+<h1>CyberSpy</h1>
+Service Provided by <a href="http://illmob.org/bookmark.html">OSINT BOOKMARKLETS v0.3</a><br/>
+Make sure to allow JS & pop ups.
+<script>
+q=''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text);if(!q)q=prompt('Enter StreetNum,StreetName,City,State,Zip','');
+var str = (q);var res = str.split(',');
+window.open('http://www.addresses.com/map.php?qa=' + res[0] + ' ' + res[1] + '&qc=' + res[2] + '&qs=' + res[3] + '&qz=' + res[4] + '&NewMapFlag=1&LV=3&MS=M&ReportType=101&x=0&y=0');
+window.open('http://www.zillow.com/homes/map/' + res[0] + '-'  + res[1] + ',' + res[2] + ',' + res[3] + ',' + res[4]+'_rb/');
+window.open('http://www.411.com/search/ReverseAddress?street=' + res[0] + ' '  + res[1] + '&where=' + res[2] + '+%2C+' + res[3] + res[4]);
+window.open('http://www.mapquest.com/maps?address=' + res[0] + ' ' + res[1] + '&city='  + res[2] + '&state=' + res[3] + '&zipcode=' + res[4]);
+window.open('http://www.bing.com/maps/?v=2&where1=' + res[0] + ' '  + res[1] + ',' + res[2] + ',' + res[3] + ','  + res[4] + '&sty=b');
+window.open('http://www.advancedbackgroundchecks.com/address/' + res[0] + '/' + res[1] + '/' + res[2] + '/' + res[3]);
+window.open('http://10digits.us/a/' + res[0] + '_' + res[1] + '/' + res[2] + '_' + res[3]);
+window.open('http://maps.google.com/maps?f=q&hl=en&geocode=&q=' + res[0] + ' '  + res[1] + ',' + res[2] + ',' + res[3] + ','  + res[4] + '&iwloc=addr');
+window.open('https://www.truepeoplesearch.com/results?streetaddress=' + res[0] + '%20' + res[1] + '&citystatezip=' + res[2] + ',%20' + res[3]);
+void(0);
+</script>
+</html>
+
