@@ -8,4 +8,6 @@ The creator strongly suggests you use this service legally, as the user, and not
 if it is used with malicious intentions.
 The user is to be held responsible if any damage is caused by the misuse of CyberSpy.
 
+Ignore cs.py, it may be used in the future as a terminal version for CyberSpy.
+To use just open index.html with a browser (For Linux with Firefox, just type "firefox index.html" while in the directory)
 Enjoy!
